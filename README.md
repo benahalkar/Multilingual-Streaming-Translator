@@ -1,26 +1,52 @@
-# Multi-Lingual Translation Project
+# Multilingual Streaming Translator
 
-## A streaming pipeline for real-time multilingual translation of text with LLMs.
+## Overview
 
+The Multilingual Streaming Translator is a real-time text translation pipeline powered by Large Language Models (LLMs). This project facilitates the continuous translation of text from a source language to a target language, making it suitable for applications like live subtitling, real-time communication, and multilingual content creation.
+
+## Key Features
+
+*   **Real-time Translation:** Processes and translates text streams on-the-fly.
+*   **Multilingual Support:** Leverages LLMs to support a wide range of language pairs.
+*   **Customizable:**  Easily configurable with different LLMs and datasets.
+*   **Modular Design:** Well-structured code for easy understanding and modification.
 
 ## Setup
 
-### Download the repository
-```
-git clone https://github.com/benahalkar/Multilingual-Streaming-Translator.git
-```
+### Prerequisites
 
-### Move inside the repository
-```
-cd MultiLingualTranslation
-```
+*   Python 3.7+
+*   `pip` package installer
 
-### Download frameworks required
-```
-pip install -r requirements.txt
-```
+### Installation
 
-### Run the code
+1.  **Clone the repository:**
+
+    ```
+    git clone https://github.com/benahalkar/Multilingual-Streaming-Translator.git
+    cd Multilingual-Streaming-Translator
+    ```
+
+2.  **Install dependencies:**
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+### Configuration
+
+The `main.py` script accepts the following command-line arguments:
+
+*   `--sourcelanguage`:  The source language code (e.g., `eng_Latn` for English).
+*   `--destlanguage`: The destination language code (e.g., `fra_Latn` for French).
+*   `--modelname`: The name of the pre-trained LLM to use (e.g., `facebook/nllb-200-distilled-1.3B`).  Refer to Hugging Face Model Hub for available models.
+*   `--dataset`:  The path to the input text dataset.
+
+### Usage
+
+To run the translation pipeline, execute the `main.py` script with the desired configuration:
+
+For eg:
 ```
 python main.py 
 --sourcelanguage eng_Latn 
@@ -29,7 +55,6 @@ python main.py
 --dataset dataset.txt
 ```
 
-<hr>
 
 ## Directory Tree
 ```
@@ -57,3 +82,25 @@ python main.py
     ├── evaluate.py
     └── make_llm.py
 ```
+
+
+## Contributing
+
+Contributions are welcome! Please submit pull requests with detailed explanations of the changes.
+
+## License
+
+This project is licensed under the [MIT](https://github.com/benahalkar/Multilingual-Streaming-Translator/blob/main/LICENSE) License.
+
+## Future Enhancements
+
+*   Implement streaming input from audio sources.
+*   Add support for more LLMs and translation APIs.
+*   Improve translation quality and speed.
+*   Develop a user-friendly interface.
+*   Incorporate error handling and logging.
+
+## Contact
+
+For questions or suggestions, please contact hb2776@columbia.edu
+
