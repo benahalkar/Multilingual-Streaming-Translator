@@ -4,6 +4,13 @@
 
 The Multilingual Streaming Translator is a real-time text translation pipeline powered by Large Language Models (LLMs). This project facilitates the continuous translation of text from a source language to a target language, making it suitable for applications like live subtitling, real-time communication, and multilingual content creation.
 
+
+### System Design
+<img src="./images/system.png" style="background-color: white;" width="600">
+
+### Apache Beam pipeline
+<img src="./images/diagram.png" style="background-color: white;" width="600">
+
 ## Key Features
 
 *   **Real-time Translation:** Processes and translates text streams on-the-fly.
